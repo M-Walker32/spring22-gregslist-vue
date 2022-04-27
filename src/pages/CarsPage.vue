@@ -10,7 +10,7 @@
   </div>
 
   <!-- Create Car Modal -->
-  <Modal id="create-car-modal">
+  <Modal id="create-modal">
     <template #modal-title-slot>
       <h3>Create a Car!</h3>
     </template>

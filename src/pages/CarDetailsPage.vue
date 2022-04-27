@@ -12,10 +12,11 @@
             <i
               class="mdi mdi-pencil selectable"
               data-bs-toggle="modal"
-              data-bs-target="#edit-car-modal"
+              data-bs-target="#edit-modal"
             ></i>
             <i class="mdi mdi-delete ms-2 selectable" @click="deleteCar()"></i>
           </div>
+
           <div class="d-flex justify-content-between p-2">
             <h5>{{ car.year }}</h5>
             <h5>{{ car.make }}</h5>

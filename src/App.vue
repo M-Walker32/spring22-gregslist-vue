@@ -12,9 +12,10 @@
         >
           Nav
         </button>
+        <!-- this will need to match #create-modal -->
         <button
           class="btn btn-success square-left"
-          data-bs-target="#create-car-modal"
+          data-bs-target="#create-modal"
           data-bs-toggle="modal"
           v-if="user.isAuthenticated"
         >

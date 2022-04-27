@@ -20,6 +20,7 @@
           <!-- NOTE the name of the page here HAS to match the name in the router.js for this page!!!! -->
           <!-- <router-link :to="{ name: 'CarsPage' }"> Cars </router-link> -->
           <h4 class="selectable" @click="navigate('CarsPage')">Cars</h4>
+          <h4 class="selectable" @click="navigate('HousesPage')">Houses</h4>
         </li>
         <!-- TODO this is your job for the afternoon challenge -->
         <!-- <li class="nav-link">
