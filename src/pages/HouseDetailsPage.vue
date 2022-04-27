@@ -24,6 +24,15 @@
     </div>
     <div v-else>plz</div>
   </div>
+
+  <Modal id="edit-modal">
+    <template #modal-title-slot>
+      <h3>Edit House!</h3>
+    </template>
+    <template #modal-body-slot>
+      <HouseForm :house="house" />
+    </template>
+  </Modal>
 </template>
 
 
@@ -49,6 +58,18 @@ export default {
     });
     return {
       // delete car
+      async deleteHouse() {
+        try {
+          if (await Pop.confirm()) {
+            await housesService.deleteHouse(route.params.id);
+            Pop.toast("house delorted", "success");
+            router.push({ name: "HousesPage" });
+          }
+        } catch (error) {
+          logger.error(error);
+          Pop.toast(error.message, "error");
+        }
+      },
       house: computed(() => AppState.house),
     };
   },

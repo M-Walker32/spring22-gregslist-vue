@@ -35,7 +35,7 @@
   </div>
 
   <!-- Edit Car Modal -->
-  <Modal id="edit-car-modal">
+  <Modal id="edit-modal">
     <template #modal-title-slot>
       <h3>Edit Car!</h3>
     </template>
